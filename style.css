@@ -1,0 +1,448 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  scroll-behavior: smooth;
+}
+
+header {
+  grid-area: header;
+  height: 4.4rem;
+  width: 100%;
+  min-width: 1024px;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: saturate(180%) blur(2rem);
+}
+
+header, section {
+  scroll-snap-align: start;
+}
+
+nav {
+  height: inherit;
+  width: 80%;
+  margin: 0rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #f5f5f7;
+  opacity: 0.8;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+.banner {
+  height: 5.2rem;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  backdrop-filter: saturate(180%) blur(20px);
+  background-color: rgba(255, 255, 255, 0.72);
+}
+
+.container {
+  height: 100vh;
+  background-color: #fbfbfd;
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 4.4rem 1fr 4.4rem;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+.nav-left-links {
+  display: flex;
+  align-items: center;
+}
+.nav-left-links img {
+  height: 3.7rem;
+  border-radius: 50%;
+}
+.nav-left-links h3 {
+  margin-left: 1rem;
+  font-size: 1.5rem;
+}
+
+.logo {
+  opacity: 1;
+}
+
+.nav-right-links {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.nav-right-links ul {
+  display: flex;
+  list-style: none;
+}
+.nav-right-links ul li {
+  margin: 0rem 2rem;
+}
+
+.banner {
+  height: 5.2rem;
+  backdrop-filter: saturate(180%) blur(20px);
+  background-color: rgba(255, 255, 255, 0.72);
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+}
+.banner .info {
+  height: inherit;
+  width: 80%;
+  padding: 1.2rem;
+  font-size: 2.1rem;
+  font-weight: 600;
+  color: #000;
+  opacity: 0.88;
+  border-bottom: 0.01rem solid #c7c7c7;
+}
+
+.upper-border {
+  border-top: 0.01rem solid #c7c7c7;
+}
+
+#intro {
+  background-image: linear-gradient(#eaeaea 0%, #fafafa 100%);
+}
+
+#intro-logo {
+  display: flex;
+  justify-content: space-between;
+  max-width: 90rem;
+  margin: 1rem auto;
+}
+#intro-logo img {
+  height: 33.6rem;
+  border-radius: 50%;
+  margin-top: 1.2rem;
+}
+
+#intro-logo-info {
+  display: flex;
+  flex-direction: column;
+}
+
+span#name {
+  display: block;
+  color: #333;
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 4.2rem;
+  margin: 1.5rem 0;
+  margin-top: 3rem;
+}
+
+span#job {
+  display: block;
+  font-size: 3.2rem;
+  font-weight: 300;
+}
+
+span#line {
+  font-size: 2rem;
+  font-weight: 200;
+  margin-top: 5rem;
+}
+
+span#study {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+#intro-details {
+  background-color: #ffffff;
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+#intro-details .intro-details-inner {
+  width: 80%;
+  margin: 0rem auto;
+  padding: 4rem 1rem;
+  line-height: 3.2rem;
+}
+
+#skills #item {
+  width: 80%;
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.skills-wrapper {
+  width: 80%;
+  margin: 2rem auto;
+  font-size: 2rem;
+}
+.skills-wrapper h2 {
+  margin: 1rem auto;
+}
+
+.skillset {
+  margin: 10rem auto;
+}
+
+.skill-bar-container {
+  position: relative;
+  width: 90%;
+  margin: 2.5rem auto;
+  border-radius: 4px;
+  background-color: whitesmoke;
+}
+.skill-bar-container .skill-bar {
+  display: block;
+  border-radius: 4px;
+  height: 3.4rem;
+}
+.skill-bar-container .skill-bar.level-html {
+  width: 92%;
+  background-color: #e54c21;
+}
+.skill-bar-container .skill-bar.level-css {
+  background-color: #2862e9;
+  width: 57%;
+}
+.skill-bar-container .skill-bar.level-js {
+  width: 70%;
+  background-color: #f7df1e;
+}
+.skill-bar-container .skill-bar.level-py {
+  width: 75%;
+  background-color: #204563;
+}
+.skill-bar-container .skill-bar.level-java {
+  width: 50%;
+  background-color: #e51f24;
+}
+.skill-bar-container .skill-bar.level-cpp {
+  width: 25%;
+  background-color: #6295cb;
+  margin-bottom: 14rem;
+}
+.skill-bar-container .skill-bar.level-react {
+  width: 72%;
+  background-color: #00d1f7;
+}
+.skill-bar-container .skill-bar.level-node {
+  width: 50%;
+  background-color: #6aa05c;
+}
+.skill-bar-container .skill-bar.level-exp {
+  width: 30%;
+  background-color: #f7df1e;
+}
+.skill-bar-container .skill-bar.level-mongo {
+  width: 70%;
+  background-color: #46a147;
+}
+.skill-bar-container .skill-bar.level-redux {
+  width: 40%;
+  background-color: #7248b6;
+}
+.skill-bar-container .skill-bar.level-mongoose {
+  width: 45%;
+  background-color: #880000;
+}
+.skill-bar-container .skill-bar.level-code {
+  width: 75%;
+  background-color: #0874b4;
+}
+.skill-bar-container .skill-bar.level-xcode {
+  width: 30%;
+  background-color: #18adee;
+}
+.skill-bar-container .skill-bar.level-pycharm {
+  width: 50%;
+  background-color: #20d089;
+}
+.skill-bar-container .skill-bar.level-git {
+  width: 80%;
+  background-color: #e94e31;
+}
+.skill-bar-container .skill-bar.level-github {
+  width: 40%;
+  background-color: #040d21;
+}
+.skill-bar-container .skill-bar.level-figma {
+  width: 20%;
+  background-color: #9d56f7;
+}
+.skill-bar-container .color-white {
+  color: #ffffff !important;
+}
+.skill-bar-container .skill-name {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  color: #333;
+}
+.skill-bar-container .skill-percent {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: #999;
+}
+
+.projects-container {
+  display: flex;
+  height: 100vh;
+  width: 95%;
+  margin: 1rem auto;
+  margin-bottom: 5rem;
+  padding: 2rem;
+  align-items: center;
+  align-items: center;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+.projects-container .project {
+  border: 0.1rem solid #c0c0c0;
+  background-color: #f8f8f8;
+  border-radius: 1rem;
+  height: fit-content;
+  margin: 2rem;
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.projects-container .project img {
+  width: 35rem;
+  height: 25rem;
+  object-fit: contain;
+}
+.projects-container .project h2 {
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 2rem;
+}
+.projects-container .project:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.contact-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.contact-container h2 {
+  text-align: center;
+  padding: 2rem;
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+.clip {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.svg--source {
+  display: none;
+}
+
+.svg--icon {
+  width: 100%;
+  max-width: 50rem;
+  height: 100%;
+  max-height: 50rem;
+  display: block;
+  margin: 0 auto;
+  fill: currentColor;
+}
+
+.wrapper {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.share {
+  width: 20rem;
+  height: 20rem;
+  float: left;
+  margin: 0.5rem 1rem 0.5rem 0;
+  color: #353c4a;
+  border: 0.125rem solid #f3f3f3;
+  box-shadow: 0 0 8px 0 rgba(50, 50, 50, 0.15);
+  border-radius: 50%;
+  transition: 250ms;
+}
+.share:last-child {
+  margin-right: 0;
+}
+.share:focus {
+  outline-color: inherit;
+}
+
+.twitter:hover, .twitter:focus {
+  color: #00ACED;
+  box-shadow: 0 0 24px 0 #00ACED;
+}
+
+.github:hover, .github:focus {
+  color: #4183c4;
+  box-shadow: 0 0 24px 0 #4183c4;
+}
+
+.pinterest:hover, .pinterest:focus {
+  color: #bd081c;
+  box-shadow: 0 0 24px 0 #bd081c;
+}
+
+.youtube:hover, .youtube:focus {
+  color: #cd201f;
+  box-shadow: 0 0 24px 0 #cd201f;
+}
+
+.facebook:hover, .facebook:focus {
+  color: #3b5998;
+  box-shadow: 0 0 24px 0 #3b5998;
+}
+
+.google:hover, .google:focus {
+  color: #dd4b39;
+  box-shadow: 0 0 24px 0 #dd4b39;
+}
+
+/*# sourceMappingURL=style.css.map */
